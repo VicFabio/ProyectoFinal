@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>VICBLOG - Proyecto final.</title>
+<!-- Google Fonts -->
+    <style> @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@500&family=Roboto+Mono&display=swap'); </style>
+<!-- Css -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/231429f0b3.js" crossorigin="anonymous"></script>
+    <!-- scroll -->
+
+<script src="js/smooth-scroll.min.js"></script>
+  <script>
+    smootScroll.init ({
+    selector: '[data-scroll]', //Selector for links
+    selectorHeader:null, // Selector for fixed headers
+    speed: 2000, // Integer. How fast to complete
+    easing: 'easeInOutCubic', // Easing pattern to use
+    offset: 0, //Inter. How far to offset the scrolling
+    callback: function ( anchor, taggle) {} // Function to run after scrolling
+  });
+  </script>
+
+</head>
+<body>
+
+      <!-- nav-->
+        <section>
+        <nav class="nav">
+        <div class="nav-container">
+          <img src="img/latido-del-corazon.png" class="nav-logo" width="40" height="40">
+            <label for="menu" class="nav-label">
+              <img src="img/menu.svg" class="nav-img">
+            </label>
+            <input type="checkbox" id="menu" class="nav-input">
+
+            <div class="nav-menu">
+              <a data-scroll href="#Inicio" class="nav-item">Inicio</a>
+              <a data-scroll href="#Tendencias" class="nav-item">Tendencias</a>
+              <a data-scroll href="#Galeria" class="nav-item">Galeria</a>
+              <a data-scroll href="#Contactanos" class="nav-item">Contactanos</a>
+            </div>
+        </div>
+        </nav>
+    </section>
+  
+  <!-- Encabezado -->
+
+    <main>
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 id="Inicio">TENDENCIAS</h1> 
+              <p class="lead text-muted">¿Qué tendencias de moda llevaremos esta temporada primavera-verano? Te dejamos una galería con todas las tendencias que se vienen, colores y cortes que dominarán nuestros días el próximo año.</p>
+              <div class="devicer"></div>
+            </div>
+          </div>
+        </section>
+
+  <!-- Carrousel portada -->
+        <div class="container">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/Slider4.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider5.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider6.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/slider7.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+<!-- Presentacion texto -->
+
+      <div class="container mt-5">
+        <p class="fw-bold">Colores, transparencias y brillos.</p>
+        <p class="text-center fst-italic">¿Qué prendas, colores y estampados serán tendencia en 2022? Desgranamos todas las colecciones de primavera para recopilar las claves que triunfarán este verano.
+          tendencias de primavera-verano dejan claro que el año no supone un borrón y cuenta nueva en términos estilísticos.
+        </p>
+      </div>
+      <hr>
+
+<!-- Texto e imagenes -->
+
+  <div class="container" id="Tendencias">
+  <section id="blog">
+    <div class="blog-box" >
+      <div class="blog-image">
+        <img src="img/color1.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>Colors.</h4>
+        <p>Empezamos por mi favorito, los colores. Llegó el momento de combinar colores que no te imaginas que pueden llegar a combinar. Si en primavera de 2021 nos preguntábamos si el color vivo era el mejor remedio estilístico contra los estragos que había dejado la pandemia, las tendencias de primavera subrayan ese poder que tienen las saturaciones potentes para hacernos sentir bien con nosotros mismos. Ya no se trata solo de acudir a gamas cromáticas fuertes, sino de la forma en la que se combinan. De nuevo, el color block se erige como una fórmula infalible a la hora de apostar por los colores más imposibles. Los cálidos se enfrentan con violencia a sus fríos complementarios o se fusionan con otros de su mismo tipo para una armonía igual de vistosa. ¿Un plus esta primavera 2022? Utilizar <strong> tono de naranja como punto de partida: para combinarlo con morado o púrpura.</strong></p>
+        <a href="#"></a>
+      </div>
+     
+    </div>
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/Rosa2.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>Rosa, todo muy rosa.</h4>
+        <p>Nos pasa a todas: nos encanta reciclar básicos. Invertir en una prenda de un color favorecedor que siga estando de boga temporada tras temporada es un gesto estilístico que se repite cuando hablamos de la gama de los rosas. Lo bueno de las tendencias de primavera verano 2022/23 es que se sigue llevando en todas sus posibilidades: podemos mencionar los vestidos fucsias en varias saturaciones de rosa.</p>
+        <a href="#"></a>
+      </div>
+     
+    </div>
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/Verde.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>Verde neón.</h4>
+        <p> No solo de los clásicos viven las altas temperaturas: cada uno de los últimos veranos han reafirmado que, efectivamente, no hay año sin que los  <strong>tonos flúor</strong> no se cuelen entre las tendencias en colores de la temporada. Suelen ser una tríada cromática integrada por el rosa, el naranja y el verde. Sin embargo, en 2022 hay un único protagonista en el reinado de los neones: es el verde en sus versiones más ácidas como el lima, el que pasa a teñir un buen grueso de las colecciones de primavera verano 2022/23.</p>
+        <a href="#"></a>
+      </div>
+    
+    </div>
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/minifalda2.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>La minifalda.</h4>
+        <p>Si hubiese que elegir una prenda que defina el verano de 2022, esa sería la minifalda en su versión más pura. Es decir, corta, muy corta, en un alegato de diversión y hedonismo que reivindica el placer de vestirse y de mostrar el cuerpo como se quiere y cuando se quiere (algo muy ligado, además, a las transparencias).</p>
+        <a href="#"></a>
+      </div>
+      
+    </div>
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/oversai2.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>La perfecto sí, pero oversize.
+        </h4>
+        <p>Que la perfecto  es una de las prendas fetiche de la temporada lo tenemos claro gracias a la cantidad de traducciones en las que se puede encontrar sobre la pasarela. Pero hay una pequeña tónica que marca la pauta: la cazadora de cuero se caracteriza esta primavera 2022 por una silueta más bien oversize.</p>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/01-rayas.gif" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>Rayas, (verticales).</h4>
+        <p>Es cierto que el estampado de rayas horizontales o incluso marineras es un clásico tan atemporal que una camiseta o un jersey así suele aparecer en la lista de prendas de un armario cápsula. Su carga primaveral es ineludible, pero eso es precisamente lo que podría haber llevado a distintas firmas a reinventarlo cambiando la dirección de las líneas.</p>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/catsui.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>El catsuit.</h4>
+        <p>Sí, la prenda más complicada de llevar es la que sigue triunfando temporada tras temporada, han hecho del mono segunda piel uno de sus diseños fetiche. Esta primavera verano 2022 encontramos vertientes para todos los gustos: se decanta por el color negro de manga larga y cuello perkins para llevar con tacón. Una versión más discreta suman también a la tendencia del cut-out, con aperturas asimétricas a la altura del hombro y del ombligo. En el terreno de los monos estampados, los estampa con motivos como rosas y les da movimiento a través de escotes profundos y drapeados estratégicos. Otros diseñadores están apostando en sus colecciones por el catsuit, y esta temporada lo actualiza a través de las transparencias y los brillos, en lentejuelas plateadas.</p>
+        <a href="#"></a>
+      </div>
+    </div>
+
+    <div class="blog-box">
+      <div class="blog-image">
+        <img src="img/07-transparencias.webp" width="500" height="500" alt="Blog">
+      </div>
+      <div class="blog-details">
+        <h4>Transparencias.</h4>
+        <p>¿Qué sería de una temporada de verano <strong>sin tejidos que dejen ver el cuerpo, sean cuales sean</strong>? Como con el blanco o con las flores, <strong>la asociación de las transparencias con el buen tiempo y la exposición del cuerpo</strong> es directa y conocida, motivo por el cual, quizás, los diseñadores han querido incidir en ella (lo dicho: recorrer territorios comunes y conocidos que aportan seguridad y bienestar). De hecho, precisamente con flores se mezcla en los vestidos.</p>
+        <a href="#"></a>
+      </div>
+    </div>
+  </div>
+
+      <!-- Galeria de img -->
+
+      <div class="container" id="Galeria">
+        <h1>Galeria</h1>
+        <span class="linea"></span>
+        <section class="galeria">
+          <a href="#image1">
+            <img src="img/color2_.jpg" alt="">
+          </a>
+          <a href="#image2">
+            <img src="img/color5_.jpg" alt="">
+          </a>
+          <a href="#image3"> 
+            <img src="img/flores-img.jpg" alt="">
+          </a>
+          <a href="#image4">
+            <img src="img/color6.jpg" alt="">
+          </a>
+          <a href="#image5">
+            <img src="img/color8.jpg" alt="">
+          </a>
+          <a href="#image6">
+            <img src="img/color9.jpg" alt="">
+          </a>
+        </section>
+<section>
+        <article class="light-box" id="image1">
+          <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/color2_.jpg" alt="">
+          <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image2">
+          <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/color5_.jpg" alt="">
+          <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image3">
+          <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/flores-img.jpg" alt="">
+          <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image4">
+          <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/color6.jpg" alt="">
+          <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image5">
+          <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/color8.jpg" alt="">
+          <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article>
+
+        <article class="light-box" id="image6">
+          <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+          <img src="img/color9.jpg" alt="">
+          <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#" class="close">X</a>
+        </article> 
+      </div>
+
+<hr>
+
+<!-- Formulario de contacto -->
+    <div class="container">
+    <form action="https://formspree.io/f/xgeqgnlz" method="POST" id="Contactanos">
+          <form class="form" >
+            <div class="form-container">
+              <h2 class="form-title">Contactanos:</h2>
+              <input type="text" class="form-input" placeholder="Nombre:" name="name">
+              <input type="email" class="form-input" placeholder="Email:" name="_replyto">
+              <textarea class="form-input form-input--message" placeholder="Dejanos tu mensaje:" name="message"></textarea>
+
+              <input type="submit" value="Enviar" class="form-cta">
+            </div>
+          </form>
+        </div>
+<!-- Footer -->
+
+      <footer>
+        <div class="footer-content">
+          <h3><strong> vic blog</strong></h3>
+          <p>Página web dedicada a la tendencias de moda del año 2022/23.</p>
+          <ul class="socials">
+            <li><a href="https://www.tiktok.com/@speaking.of.trends/video/7149212328540687622?is_from_webapp=1&sender_device=pc&web_id=7156686372957423110"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="https://www.instagram.com/sereinne_/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://ar.pinterest.com/pin/8233211823441811/"><i class="fa fa-pinterest"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p></p>
+        </div>
+      </footer>
+
+  </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
